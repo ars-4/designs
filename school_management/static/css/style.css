@@ -1,0 +1,123 @@
+@import url('bootstrap.min.css');
+@import url('fonts/stylesheet.css');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik';
+    overflow-x: hidden;
+    background: url("../images/schoolbg.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(24, 24, 24, 0.9);
+    background-blend-mode:darken;
+}
+
+/* Global */
+.link {
+    color: var(--bs-teal);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.link:hover {
+    color: var(--bs-green);
+    transition: 0.5s;
+}
+.transparent-bg {
+    background:transparent;
+}
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+.bg-teal {
+    background-color: teal !important;
+}
+.btn-outline-teal {
+    color: var(--bs-teal);
+    border: 2px solid currentColor;
+    transition: 0.5s;
+}
+.btn-outline-teal:hover {
+    color: #242424;
+    background-color: var(--bs-teal);
+    border: 2px solid currentColor;
+    transition: 0.5s;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    border-right: 3px solid var(--bs-teal);
+    position: fixed;
+}
+.navbar .dbar {
+    width: 100%;
+    padding: 5px;
+    height: 800px;
+}
+.navbar .dbar li {
+    list-style-type: none !important;
+    font-size: 20px;
+    border-bottom: 3px solid var(--bs-teal);
+    padding: 20px;
+    width: 100%;
+    transition: 0.5s;
+}
+.navbar .dbar li:hover {
+    background-color: var(--bs-teal);
+    transition: 0.5s;
+}
+.navbar .dbar li:hover .link,
+.navbar .dbar li:hover span {
+    color: #fff;
+}
+.navbar li,
+.navbar h3 {
+    cursor: pointer;
+}
+
+
+.main-body {
+    margin-left: 25%;
+    margin-right: 25% !important;
+}
+
+
+
+/* Dashboard */
+.dashboardcard {
+    background: transparent !important;
+    border: none;
+}
+.dashboardcard .specialcard {
+    border: none;
+    margin-top: -2%;
+}
+.dashboardcard .specialcard table tr {
+    border-bottom: 1px solid #1a1a1a;
+}
+.dashboardcard .specialcard table tr td,
+.dashboardcard .specialcard table tr th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+/* Profile Cards */
+.profile {
+    background: transparent !important;
+    border: none;
+}
+.profile .image-container {
+    width: 300px;
+    background-color: var(--bs-teal);
+    height: 300px;
+    overflow: hidden;
+}
+.profile .image-container img {
+    width: 100%;
+}

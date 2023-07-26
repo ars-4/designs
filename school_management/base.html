@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    
+    <div class="row body">
+        <!-- Navigation Bar -->
+        <div class="col-3 navbar">
+            <h3 class="link" onclick="dashb();" style="position: fixed; top:10px; left: 10px;"><span class="fa fa-school"></span>&nbsp;The School</h3>
+            <div class="dbar">
+                <br>
+                <br>
+                <li onclick="userp();"><a class="link"><span class="fa fa-user"></span>&nbsp;&nbsp;Your Profile</a></li>
+                <li onclick="schoolp()"><a class="link"><span class="fa fa-home"></span>&nbsp;&nbsp;School Profile</a></li>
+                <li><a class="link"><span class="fa fa-users"></span>&nbsp;&nbsp;Classes</a></li>
+                <li><a class="link"><span class="fa fa-chalkboard-teacher"></span>&nbsp;&nbsp;Management</a></li>
+                <li><a class="link"><span class="fa fa-user-graduate"></span>&nbsp;&nbsp;Students</a></li>
+                <li><a class="link"><span class="fa fa-sign-out"></span>&nbsp;&nbsp;Logout</a></li>
+            </div>
+        </div>
+
+        <!-- Main Body -->
+        <div class="col-9 main-body">
+            <iframe width="100%" height="600px" src="school/read.html"></iframe>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/65fd6c747e.js" crossorigin="anonymous"></script>
+    <script src="static/js/functions.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242424;
+    min-height: 80vh;
+}
+
+.mastercard {
+    position: relative;
+    /* transform: rotateY(180deg); */
+    /* border-radius: 4px; */
+    overflow: hidden;
+    /* border: 1px solid #fff; */
+    width: 460px;
+    height: 280px;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mastercard .content-fr {
+    /* z-index: 1; */
+    padding: 20px;
+    background-color: #f44336;
+    width: 380px;
+    height: 200px;
+    position: relative;
+    border-radius: 4px;
+    margin-top: 20px;
+    box-shadow: 4px -2px 10px #000;
+    /* display: none; */
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mastercard .content-bg {
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 4px -2px 10px #000;
+    background-color: #f44336;
+    width: 380px;
+    height: 200px;
+    margin-top: -40px;
+    margin-left: 40px;
+    position: absolute;
+    border-radius: 4px;
+    z-index: -1;
+    top: 40px;
+    /* display: none; */
+}
+
+.mastercard .content-fr .company {
+    font-weight: bold;
+    float: right;
+}
+
+.mastercard .content-fr .chip {
+    padding: 10px 25px;
+    background-color: yellow;
+    border-radius: 4px;
+}
+
+.mastercard .content-fr .number {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.mastercard .content-fr .date-h {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.mastercard .content-fr .date-b {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.mastercard .content-fr .holder {
+    font-weight: bold;
+}
+
+.mastercard .content-fr .logo {
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+    color: #fff;
+}
+
+.mastercard .content-fr .logo .circle1,
+.mastercard .content-fr .logo .circle2 {
+    background-color: #242424;
+    padding: 23px 23px;
+    top: 0;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.mastercard .content-fr .logo .circle2 {
+    position: absolute;
+    right: -16px;
+    background-color: red;
+}
+
+.mastercard .content-fr .logo .circle1 {
+    position: absolute;
+    left: 0;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.mastercard .content-fr .logo .bg {
+    z-index: -1;
+}
+
+.mastercard .content-fr .logo .fg {
+    z-index: 1;
+    position: absolute;
+    /* font-weight: bold; */
+    left: -18px;
+    top: 10px;
+    color: #242424;
+}
+
+.mastercard .content-bg .bar {
+    width: 96%;
+    padding: 10px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    left: -2px;
+}
+
+.mastercard .content-bg .contact {
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+
+.mastercard .content-bg .secret {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mastercard .content-bg .secret .info-h {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mastercard .content-bg .secret .info-b {
+    background-color: #c3c3c3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 3px;
+}
+
+.mastercard .content-bg .secret .info-b span {
+    margin-right: 4px;
+}
+
+.mastercard .content-bg .secret .info-b .signature {
+    /* font-family: cursive; */
+    font-family: BlackLadder;
+}
+
+.mastercard .content-bg .secret .info-b .cvv {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.mastercard .content-bg .message {
+    font-size: 12px;
+    float: right;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+.mastercard .content-bg .note {
+    text-align: center;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-top: 14%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.mastercard .content-bg .note .content {
+    width: 220px;
+}

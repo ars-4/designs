@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="transparent-bg">
+    <br>
+    <div class="heading link"><h1 class="Link"><span class="fa fa-dashboard"></span>Dashboard</h1></div>
+
+    <div class="card dashboardcard">
+        <div class="card-body row">
+            <div class="col-md-5">
+                <div class="card">
+                    <canvas id="StudentsAttendanceChart"></canvas>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 card">
+                <canvas id="TeachersAttendanceChart"></canvas>
+            </div>
+        </div>
+        <br>
+        <div class="card-body row">
+            <div class="col-md-5 card">
+                <canvas id="ClassList"></canvas>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <h1 class="text-center bg-teal text-light" style="width:100% !important;">List</h1>
+                <div class="card specialcard">
+                    <table class="card-body text-center">
+                        <tr>
+                            <th># No.</th>
+                            <th>Title</th>
+                            <th>Count</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Teachers</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Students</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Employees</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <th>Total</th>
+                            <th>90</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let StudentsCount = [
+        0, 80, 5, 15, 30, 62
+        ]
+        let TeachersCount = [
+        10, 30, 42, 30, 10, 3
+        ]
+
+        let ClassCount = [
+        30, 10, 20, 15, 10, 40
+        ]
+    </script>
+    <script src="static/js/chart.js"></script>
+    <script src="static/js/charts.js"></script>
+</body>
+</html>
